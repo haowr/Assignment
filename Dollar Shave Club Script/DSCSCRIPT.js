@@ -6,9 +6,6 @@ let currentUrl = location.href
 
 const buttonCheckFunction = ()=>{
 
-    console.log("BLOG")
-
-
     let goHomeButtonCheckLoop = setInterval(()=>{
 
         getStartedButton = document.querySelector('.css-pyqqhw')
@@ -105,23 +102,12 @@ const buttonCheckFunction = ()=>{
     
         }
     
-
-    
     },100)
-
-
 
 }
 
 const checkExistence = () => {
 
-    
-
-    setInterval(()=>{
-
-                
-
-    })
 
     let refreshIntervalId = setInterval(()=>{
 
@@ -131,13 +117,10 @@ const checkExistence = () => {
 
         if(header == null && subHeader ==null){
         
-            //console.log("Not ready yet")
-
-            
+            console.log("Not ready yet")
 
         }else{
 
-            console.log(header)
             header.textContent = "Widerfunnel"
             subHeader.textContent = "We are here to help you with         experimentation."
             clearInterval(refreshIntervalId)
@@ -154,6 +137,5 @@ buttonCheckFunction()
 
     document.body.addEventListener('click',checkExistence)
     document.addEventListener("DOMContentLoaded", function(event) { 
-    console.log("READY!!")
 
 });
