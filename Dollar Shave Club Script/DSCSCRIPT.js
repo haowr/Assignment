@@ -1,8 +1,6 @@
 var subHeader = document.querySelector('.css-9whu1j')
 var getStartedButton = document.querySelector('.css-pyqqhw')
 var goHomeButton = document.querySelector('.ui-v-align__container')
-var visited = false;
-var pageTwo = false;
 let currentUrl = location.href
 
 
@@ -37,14 +35,12 @@ const buttonCheckFunction = ()=>{
         
                         setTimeout(function(){
 
-                            visited = true;
                             goHomeButton.click((event)=>{
 
                                 //console.log(event)
 
                             })
 
-                            //pageTwo = true;
                             clearInterval(homeButtonLoop)
 
                             setTimeout(function(){
@@ -85,15 +81,11 @@ const buttonCheckFunction = ()=>{
             
                        setTimeout(function(){
 
-                           visited = true;
-
                            goHomeButton.click((event)=>{
 
                                console.log("cliekc",event)
 
                            })
-
-                           //pageTwo = true;
 
                            clearInterval(homeButtonCheck)
 
